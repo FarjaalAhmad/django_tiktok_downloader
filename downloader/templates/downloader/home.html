@@ -17,34 +17,22 @@
       <nav class="text-center">
         <h1>TikTok Downloader</h1>
       </nav>
+
       <form method="POST" action="decide/">
         <div class="form-group ">
           <legend class="col-form-label">Enter Video URL</legend>
-          <input type="text" class="form-control " aria-describedby="url" name="url">
-          <legend class="col-form-label">What Todo?</legend>
-          <fieldset class="form-group">
-            <div class="row">
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="todo" value="1" checked>
-                  <label class="form-check-label" for="gridRadios1">
-                    Download
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="todo" value="2">
-                  <label class="form-check-label" for="gridRadios2">
-                    JSON Data
-                  </label>
-                </div>
-              </div>
-            </div>
-          </fieldset>
+          <input type="text" class="form-control " aria-describedby="url" name="url" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+          <input type="hidden" name="todo" value="1" >
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
 
+    <footer class="text-muted">
+      <div class="container text-center">
+        <p>Coded by <a href="https://facebook.com/farjaalahmad0" target="_blank">Farjaal Ahmad </a>- {% now "Y" %}</p>
+      </div>
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
