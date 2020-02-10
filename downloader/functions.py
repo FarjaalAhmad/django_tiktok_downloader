@@ -11,7 +11,12 @@ def downloader(link):
 
     soup = BeautifulSoup(resp.text, 'html.parser')
     links = soup.find_all('a')
-    links_list = []
+
+    dictdata = ["watermark","without_watermark","audio"]
+    i = 0
+    links_list = {}
+
     for link in links:
-    	links_list += (link["href"],)
+    	links_list[dictdata[i]] = link["href"]
+    	i = i + 1
     return json.dumps(links_list)
