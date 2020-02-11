@@ -11,7 +11,7 @@ def home(request):
 def download(request,url):
     dict = functions.downloader(url)
     dict = simplejson.loads(dict)
-    return render(request, 'downloader/download.html', {"watermark":dict["watermark"],"without_watermark":dict["without_watermark"],"audio":dict["audio"]})
+    return render(request, 'downloader/download.html', {"without_watermark":dict["watermark"],"watermark":dict["without_watermark"],"audio":dict["audio"]})
 
 def json(request,url):
     dict = functions.downloader(url)
