@@ -5,6 +5,7 @@ A Django based TikTok Downloader.
 - git clone https://github.com/FarjaalAhmad/django_tiktok_downloader
 - cd django_tiktok_downloader
 - pip3 install -r requirements.txt
+- python3 manage.py migrate
 - python3 manage.py runserver
 
 Site URL: http://localhost:8000
