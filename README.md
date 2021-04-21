@@ -1,5 +1,5 @@
 # django_tiktok_downloader
-A Django based TikTok Downloader. Download video without watermark.
+A Django based TikTok Downloader. Download video without a watermark.
 
 ## Installation:
 - git clone https://github.com/FarjaalAhmad/django_tiktok_downloader
