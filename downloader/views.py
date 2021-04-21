@@ -9,9 +9,8 @@ def home(request):
     return render(request, 'downloader/home.html', {})
 
 def download(request,url):
-    dict = functions.downloader(url)
-    dict = simplejson.loads(dict)
-    return render(request, 'downloader/download.html', {"without_watermark":dict["watermark"],"watermark":dict["without_watermark"],"audio":dict["audio"]})
+    link = functions.downloader(url)
+    return render(request, 'downloader/download.html', {"without_watermark": link})
 
 def json(request,url):
     dict = functions.downloader(url)
