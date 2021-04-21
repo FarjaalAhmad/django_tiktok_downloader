@@ -19,4 +19,3 @@ url=[Video_URL_Here]&todo=2
 ### To be Added in Future
 - More Sources
 
-#### Not longer managed for now.
