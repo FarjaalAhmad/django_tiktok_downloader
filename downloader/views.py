@@ -2,7 +2,6 @@
 from django.shortcuts import render
 from . import functions
 from django.http import HttpResponse
-import simplejson
 
 
 def home(request):
@@ -13,8 +12,8 @@ def download(request,url):
     return render(request, 'downloader/download.html', {"without_watermark": link})
 
 def json(request,url):
-    dict = functions.downloader(url)
-    return HttpResponse(dict)
+    link = functions.downloader(url)
+    return HttpResponse(link)
 
 def decide(request):
     url = request.POST.get("url")
