@@ -10,6 +10,13 @@ A Django based TikTok Downloader. Download video without a watermark.
 
 Site URL: http://localhost:8000
 
+### Deployment:
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=42d61c4435ff&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
+You can register here and Get $100 Free for 2 months.
+
+
+
 ### Usage:
 For API Usage
 =============
